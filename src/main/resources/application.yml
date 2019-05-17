@@ -2,8 +2,6 @@ server:
   tomcat:
     max-threads: 400
   port: 8080
-  servlet:
-    context-path: /caronline
 spring:
   datasource:
     url: jdbc:h2:mem:caronline;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
@@ -11,15 +9,15 @@ spring:
     username: sa
     password: sa
     driverClassName: org.h2.Driver
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        show_sql: true
-        use_sql_comments: true
-        format_sql: true
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        show_sql: true
+#        use_sql_comments: true
+#        format_sql: true
   h2:
     console:
       enabled: true
@@ -27,4 +25,8 @@ spring:
       settings:
         trace: false
         web-allow-others: false
+shorturl:
+  config:
+    domainName: localhost:8080/
+    threadPoolSize: 100
 

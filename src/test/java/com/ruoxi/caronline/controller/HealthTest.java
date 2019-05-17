@@ -15,13 +15,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @WebMvcTest(Health.class)
 public class HealthTest {
-	@Autowired
-	MockMvc mockMvc;
+    @Autowired
+    MockMvc mockMvc;
 
-	@Test
-	public void testHealth() throws Exception {
-		mockMvc.perform(get("/health"))
-				.andExpect(status().isOk())
-				.andExpect(content().string("Url shorten application is running!"));
-	}
+    @Test
+    public void testHealth() throws Exception {
+        mockMvc.perform(get("/health"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("Url shorten application is running!"));
+    }
 }

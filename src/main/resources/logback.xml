@@ -52,8 +52,8 @@
     </appender>
 
     <root level="info">
-        <appender-ref ref="STDOUT" />
-        <appender-ref ref="FILE-GENERAL" />
-        <appender-ref ref="FILE-ERROR" />
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE-GENERAL"/>
+        <appender-ref ref="FILE-ERROR"/>
     </root>
 </configuration>
