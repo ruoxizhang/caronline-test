@@ -9,8 +9,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
 
-import static com.google.common.cache.CacheBuilder.newBuilder;
-
 @Component
 public class MainCache {
 
